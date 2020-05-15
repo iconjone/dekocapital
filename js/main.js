@@ -289,6 +289,8 @@ jQuery(document).ready(function($) {
 
 	var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
+    $('.js-sticky-header').on('sticky-start', function() { $('#navbarLogo').attr('src', "images/Dekos-Logo.png"); });
+    $('.js-sticky-header').on('sticky-end', function() { $('#navbarLogo').attr('src', "images/Dekos-Logo-White.png"); });
 	};
 	siteSticky();
 
