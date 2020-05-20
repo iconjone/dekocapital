@@ -386,17 +386,16 @@ contact@dekoscapital.com
       </div>
 
 
-      <div class="owl-carousel nonloop-block-14">
+      <div id="newsCarousel" class="owl-carousel nonloop-block-14">
 
-        <div class="service">
+        <div class="service" data-toggle="modal" data-target="#newsModal">
           <div>
             <h3>Branding Design</h3>
             <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
           </div>
         </div>
 
-
-        <div class="service">
+        <!-- <div class="service">
           <div>
             <h3>WordPress Integration</h3>
             <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
@@ -429,12 +428,37 @@ contact@dekoscapital.com
             <h3>Creative Design</h3>
             <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
           </div>
-        </div>
+        </div> -->
 
 
 
       </div>
 
+    </div>
+
+    <div id="newsModalContainer">
+      <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="newsModalTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+              <div class="modal-body">
+                <div class="modal-date" id="newsModalDate" style="font-weight: bold;"> Modal Date
+                </div>
+                <div class="modal-text" id="newsModalText">
+                  Modal Text
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -537,6 +561,15 @@ contact@dekoscapital.com
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
+  <script src="js/news.js"></script>
+  <script type="text/javascript">
+  async function generateNews(){
+await news('newsCarousel', '1v0LQVuJ-hMy1J7M8JT59mBFnaoVgqFH9f0029SGvqMo')
+console.log("on page")
+
+
+      }generateNews();
+  </script>
   <script src="js/main.js"></script>
 
 
