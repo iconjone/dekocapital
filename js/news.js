@@ -15,7 +15,7 @@ var elementAdd = document.getElementById(carouselElementId)
       entryArrays.forEach(function(entry) {
         if (ite % 3 == 0 && ite >= 3) {
           console.log(elementAdd)
-            elementAdd.appendChild(createServiceElements(entryArrays[ite + 1].content['$t'],entryArrays[ite + 2].content['$t'],entryArrays[ite + 1].content['$t']))
+            elementAdd.appendChild(createServiceElements(entryArrays[ite].content['$t'],entryArrays[ite + 2].content['$t'],entryArrays[ite + 1].content['$t']))
         }
         ite++
       })
