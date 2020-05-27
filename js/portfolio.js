@@ -34,7 +34,7 @@ console.log("came here")
             $(".filter-button , .filter-button-stat").click(function(){
                   var value = $(this).attr('data-filter');
                   filterSelector = ''
-                  if(value == 'StatAll' || value == 'current' || value == 'realized'){
+                  if(value == 'StatAll' || value == 'realized' || value == 'active'){
                       if(filter != 'all')
                         filterSelector = filterSelector + "[" + filter + "]"
                           //filterSelector = filterSelector + "[" + value + "] [" + statFilter + "]"

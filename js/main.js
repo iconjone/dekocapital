@@ -325,93 +325,15 @@ jQuery(document).ready(function($) {
 	}
 	counter();
 
-//   $(document).ready(function(){
-//     var statFilter = 'StatAll'
-//     var statOptions = ['StatExisting', 'StatPending']
-//     var filter = 'all'
-//     var filterOptions = ['one', 'two']
-//       $(".filter-button , .filter-button-stat").click(function(){
-//           var value = $(this).attr('data-filter');
-//           var stat= false;
-//           if(value.substring(0,4) == "Stat")
-//             stat = true;
-//           if((filter == value && !stat) || (statFilter == value && stat))
-//           {
-//               //$('.filter').removeClass('hidden');
-//               //$('.filter').show('1000');
-//               //do nothing
-//
-//
-//           }
-//           else if (value == "StatAll" || value == "all") {
-//             console.log('run')
-//             if(value == 'all'){
-//               console.log('run')
-//             filter = 'all'
-//             $('.filter-button').removeClass('active')
-//             $('#allBtn').addClass('active')
-//             if(statFilter == "StatAll"){
-//               $('.filter').show('1000');
-//               console.log('run')
-//             }
-//             else{
-//               $('.filter').show('1000');
-//               $('.filter').not('.'+statFilter).hide('3000')
-//               $('.filter').filter('.'+statFilter).show('3000');
-//             }
-//           }
-//             else{
-//             statFilter = "StatAll"
-//               $('.filter-button-stat').removeClass('active')
-//               $('#allStatusBtn').addClass('active')
-//               if(filter == "all"){
-//                 $('.filter').show('1000');
-//               }
-//               else{
-//                 $('.filter').show('1000');
-//                 $('.filter').not('.'+filter).hide('3000')
-//                 $('.filter').filter('.'+filter).show('3000');
-//               }
-//           }
-//           }
-//           else
-//           {
-//             if(stat){
-//                 $('.filter-button-stat').removeClass('active')
-//                 $(this).addClass('active')
-//               statFilter = value;
-//             }
-//               else {
-//                 $('.filter-button').removeClass('active')
-//                 $(this).addClass('active')
-//                 filter=value;
-//               }
-//
-//   //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//   //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-//               if(filter == 'all'){
-//                 $('.filter').filter('.'+statFilter).show('3000');
-//                 $(".filter").not('.'+statFilter).hide('3000');
-//               }
-//               else if (statFilter == "StatAll") {
-//                 $('.filter').filter(" ."+filter).show('3000');
-//                 $(".filter").not(" ."+filter).hide('3000');
-//               }
-//               else{
-//                 $('.filter').filter(" ."+filter).show('3000');
-//                 $(".filter").not(" ."+filter).hide('3000');
-//                 $(".filter").not('.'+statFilter).hide('3000');
-//
-//             }
-// console.log(filter)
-// console.log(statFilter)
-//           }
-//       //    $(this).toggleClass("active")
-//       });
-//
-//
-//
-//
-//   });
+  $(document).ready(function(){
+     var $form = $('form');
+     $form.submit(function(){
+        $.post($(this).attr('action'), $(this).serialize(), function(response){
+              $form.html("<h1>Thank you for your submission!</h1>")
+        },'json');
+        $form.html("<h1>Thank you for your submission!</h1>")
+        return false;
+     });
+  });
 
 });
