@@ -71,7 +71,7 @@
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
                 <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Strategy:<span style="color:#8b8b8b;"> Private Equity<span>
+                       Strategy:<span style="color:#8b8b8b;"> Private Equity  <span><span class="icon-chevron-down" aria-hidden="true"></span>
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                        <a class="dropdown-item" href="#">Real Estate</a>
@@ -92,7 +92,7 @@
     <div class="site-section section-2 bg-light" id="approach" data-aos="fade" style="background:#00001f !important;">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-5">
+          <div class="col-lg-12 mb-5">
             <h2 class="section-title" style="color:white;">Our Approach</h2>
             <p>We are an operationally-focused investment firm that partners with unrivaled management teams and lower middle-market companies that are at an inflection point in their growth trajectories.</p>
           </div>
@@ -137,7 +137,7 @@
     <div class="site-section section-2" id="investing-criteria" data-aos="fade">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-5">
+          <div class="col-lg-12 mb-5">
             <h2 class="section-title">Investment Criteria</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt
               nisi.</p>
@@ -145,12 +145,12 @@
         </div>
         <div class="row">
           <div class="col-sm">
-            <div class="accordion" id="buisnessProfileAccordion">
+            <div class="accordionBuisness" id="buisnessProfileAccordion">
               <div class="card z-depth-0 bordered">
                 <div class="card-header" id="headingOne2">
                   <h5 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#buisnessProfileCollapse" aria-expanded="true" aria-controls="buisnessProfileCollapse">
-                      Buisness Profile
+                      Buisness Profile <span class="icon-plus-circle" aria-hidden="true"></span>
                     </button>
                   </h5>
                 </div>
@@ -170,12 +170,12 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="accordion" id="TransactionProfileAccordion">
+            <div class="accordionBuisness" id="TransactionProfileAccordion">
               <div class="card z-depth-0 bordered">
                 <div class="card-header" id="headingOne2">
                   <h5 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#TransactionProfileCollapse" aria-expanded="true" aria-controls="collapseOne2">
-                      Transaction Profile
+                      Transaction Profile <span class="icon-plus-circle" aria-hidden="true"></span>
                     </button>
                   </h5>
                 </div>
@@ -197,12 +197,12 @@
         </div>
         <div class="row">
           <div class="col-sm">
-            <div class="accordion" id="TargetIndustriesAccordion">
+            <div class="accordionBuisness" id="TargetIndustriesAccordion">
               <div class="card z-depth-0 bordered">
                 <div class="card-header" id="headingOne2">
                   <h5 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#TargetIndustriesCollapse" aria-expanded="true" aria-controls="TargetIndustriesCollapse">
-                      Target Industries
+                      Target Industries <span class="icon-plus-circle" aria-hidden="true"></span>
                     </button>
                   </h5>
                 </div>
@@ -234,7 +234,7 @@
     <div class="site-section section-2 bg-light" id="partnership" data-aos="fade" style="background:#00001f !important;">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-5">
+          <div class="col-lg-12 mb-5">
             <h2 class="section-title" style="color:white;">Partnership</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
           </div>
@@ -287,71 +287,68 @@
     <div class="site-section section-2" id="portfolio" data-aos="fade">
       <div class="container ">
         <div class="row">
-          <div class="col-lg-4 mb-5">
+          <div class="col-lg-12 mb-5">
             <h2 class="section-title">Portfolio</h2>
             <p>Founded in 2020, we are focused on investing in middle-market companies across a variety of industries. During our collective history, we have successfully invested in over a dozen platform companies spanning a diverse range of industrial, business services and consumer verticals representing more than [$ ] billion in aggregate revenue. </p>
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-12">
               <h4 class="">Filter</h4>
               <p>Filter our things based on the input below</p>
           <div class="row">
-            <div align="bottom">
-              <button id="allStatusBtn" class="btn filter-button-stat active" data-filter="StatAll">All Status</button>
-              <button class="btn  filter-button-stat" data-filter="StatExisting">Existing</button>
-              <button class="btn  filter-button-stat" data-filter="StatPending">Pending</button>
+            <div align="left">
+              <button id="allStatusBtn" class="btn filter-button filter-button-all active" data-filter="StatAll">All Status</button>
+              <button class="btn  filter-button" data-filter="current">Current</button>
+              <button class="btn  filter-button" data-filter="realized">Realized</button>
             </div>
           </div>
           <div class="row">
-            <div align="left">
-              <button id="allBtn" class="btn filter-button active" data-filter="all">All</button>
-              <button class="btn filter-button" data-filter="one">Investment Category #1</button>
-              <button class="btn filter-button" data-filter="two">Investment Category #2</button>
+            <div id="portfolioFilterContainer" align="left">
+              <button id="allBtn" class="btn filter-button filter-button-all active" data-filter="all">All</button>
             </div>
           </div>
         </div>
       </div>
 
-        <div class="row justify-content-center">
-          <div class=" filter one">
+        <div id="portfolioContainer" class="row justify-content-center">
+
+
+
+          <!-- <div id="portfolioElement" current agriculture>
             <a class="work-thumb">
               <div class="work-text">
                 <h5>Long Company Name</h5>
-                <span class="category">Text</span>
               </div>
-              <img src="http://fakeimg.pl/150x150/" class="img-responsive">
+              <img src="http://fakeimg.pl/200x200/" class="img-responsive">
+            </a>
+          </div> -->
+
+          <!-- <div id="portfolioElement" current agriculture>
+            <a class="work-thumb">
+              <div class="work-text">
+                <h5>Long Company Name 1</h5>
+              </div>
+              <img src="http://fakeimg.pl/200x200/" class="img-responsive">
             </a>
           </div>
 
-          <div class="filter one two">
-            <img src="http://fakeimg.pl/200x100/" class="img-responsive">
+          <div id="portfolioElement" realized technologies>
+            <a class="work-thumb">
+              <div class="work-text">
+                <h5>Long Company Name 2</h5>
+              </div>
+              <img src="http://fakeimg.pl/200x200/" class="img-responsive">
+            </a>
           </div>
 
-          <div class="filter two">
-            <img src="http://fakeimg.pl/350x150/" class="img-responsive">
-          </div>
-          <div class=" filter one StatExisting">
-            <img src="http://fakeimg.pl/100x100/" class="img-responsive">
-          </div>
-
-          <div class="filter one two StatExisting">
-            <img src="http://fakeimg.pl/100x100/" class="img-responsive">
-          </div>
-
-          <div class="filter two StatExisting">
-            <img src="http://fakeimg.pl/100x100/" class="img-responsive">
-          </div>
-          <div class=" filter one StatPending">
-            <img src="http://fakeimg.pl/100x100/" class="img-responsive">
-          </div>
-
-          <div class="filter one two StatPending">
-            <img src="http://fakeimg.pl/100x100/" class="img-responsive">
-          </div>
-
-          <div class="filter two StatPending">
-            <img src="http://fakeimg.pl/100x100/" class="img-responsive">
-          </div>
+          <div id="portfolioElement" current technologies>
+            <a class="work-thumb">
+              <div class="work-text">
+                <h5>Long Company Name 2</h5>
+              </div>
+              <img src="http://fakeimg.pl/200x200/" class="img-responsive">
+            </a>
+          </div> -->
 
 
         </div>
@@ -360,6 +357,43 @@
 
 
 
+    <div id="portfolioModalContainer">
+      <div class="modal fade" id="portModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="portModalTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="modal-text" id="portModalText">
+                      Modal Text
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="row py-4">
+                      <img id="portModalImg" class="img-responsive" src="">
+                    </div>
+                    <div class="row">
+                      <a id="portModalBtn" type="button" class="btn btn-primary" href="">Go to Site</a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -438,7 +472,7 @@ contact@dekoscapital.com
 
     <div id="newsModalContainer">
       <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="newsModalTitle">Modal title</h5>
@@ -562,6 +596,13 @@ contact@dekoscapital.com
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/news.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script type="text/javascript">
+  async function generatePortfolio(){
+await portfolio('portfolioContainer','portfolioFilterContainer', '1c3Niyom45soBatgSY9N70NCfMkxbu4Wz-5GNR2If3JU')
+console.log("on page")
+}generatePortfolio();
+  </script>
   <script type="text/javascript">
   async function generateNews(){
 await news('newsCarousel', '1v0LQVuJ-hMy1J7M8JT59mBFnaoVgqFH9f0029SGvqMo')

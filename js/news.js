@@ -80,7 +80,7 @@ function createServiceElements(title, text, date){
     serviceBody.innerHTML = text
   }
   else {
-    serviceBody.innerHTML = text.substring(0,100) + "... Click to read more!"
+    serviceBody.innerHTML = text.substring(0,200) + "... Click to read more!"
   }
   innerDivShell.appendChild(titleService)
   innerDivShell.appendChild(dateService)
@@ -103,6 +103,6 @@ $('#newsModal').on('show.bs.modal', function (event) {
   var modal = $(this)
   modal.find('#newsModalTitle').text(title)
   modal.find('#newsModalDate').text(date)
-  modal.find('#newsModalText').text(text)
+  modal.find('#newsModalText').html(text)
 
 })
