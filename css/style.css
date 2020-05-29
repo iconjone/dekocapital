@@ -1038,7 +1038,7 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 991.98px) {
   .custom-owl-carousel .col-lg-5 {
-    margin-top: 40%; } }
+    margin-bottom: 40%; } }
 
 .custom-owl-carousel .owl-custom-direction {
   position: absolute;
