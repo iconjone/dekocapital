@@ -1228,3 +1228,7 @@ button.btn.filter-button.active ,button.btn.filter-button-stat.active{
 {
     margin-bottom: 30px;
 }
+@media (min-width: 768px)
+.d-md-block {
+    display: inherit!important;
+}
